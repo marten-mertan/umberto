@@ -36,8 +36,7 @@ function buildStyles() {
       .pipe(sassGlob())
       .pipe(sass())
       .pipe(postcss([
-        autoprefixer(),
-        cssnano()
+        autoprefixer()
       ]))
       .pipe(dest('docs/styles/'));
 }
@@ -52,7 +51,7 @@ function buildScripts() {
   return src('src/scripts/index.js')
   .pipe(webpack({
     output:       {filename: 'bundle.js'},
-    optimization: {minimize: true}
+    optimization: {minimize: false}
   }))
   .pipe(dest('docs/scripts/'));
 }
