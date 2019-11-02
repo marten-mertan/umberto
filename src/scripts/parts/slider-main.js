@@ -2,6 +2,7 @@ function initSliderMain(){
     $('.js-slider-main').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        lazyLoad: 'progressive',
         arrows: true,
         dots: true,
         autoplay: true,
