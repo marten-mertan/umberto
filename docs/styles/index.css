@@ -124,7 +124,9 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-          flex-direction: row; }
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
   @media screen and (max-width: 991px) {
     .checkout-bottom-new {
       -webkit-box-orient: vertical;

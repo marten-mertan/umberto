@@ -137,6 +137,7 @@
 .checkout-bottom-new{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     @media screen and (max-width: 991px){
         flex-direction: column;
     }
