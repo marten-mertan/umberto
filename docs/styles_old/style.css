@@ -5137,4 +5137,8 @@ margin-top: 5px;
     .profile-btn__right{
         margin-right: 130px;
     }
+} 
+.page-title.catalog{
+    text-align: left;
+    padding-bottom: 0;
 }
