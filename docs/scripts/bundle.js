@@ -113,6 +113,7 @@ function initBasketSpecialSlider(){
         slidesToScroll: 3,
         arrows: true,
         dots: true,
+        infinite: false,
         useTransform: false,
         prevArrow: '<a class="arrows back"><img src="assets/img/arrow-left.svg" alt="arrow-left"></img></a>',
         nextArrow: '<a class="arrows next"><img src="assets/img/arrow-right.svg" alt="arrow-right"></img></a>',
