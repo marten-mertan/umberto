@@ -1,9 +1,11 @@
 import initSliderMain from './parts/slider-main';
 import initBasketSpecialSlider from './parts/basket-special-slider';
+import initSliderCatalog from './parts/slider-catalog';
 
 window.onload = function() {
     initSliderMain();
     initBasketSpecialSlider();
+    initSliderCatalog();
     $(document).on('click', '.btn-ingredients', function () {
         $('.slick-track').css('transform', 'none');
         $('.slick-list').css('transform', 'none');

@@ -137,13 +137,30 @@ function initBasketSpecialSlider(){
 }
 
 /* harmony default export */ var basket_special_slider = (initBasketSpecialSlider);
+// CONCATENATED MODULE: ./src/scripts/parts/slider-catalog.js
+function initSliderCatalog(){
+    $('.js-slider-catalog').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        prevArrow: '<a class="arrows back"><img src="assets/img/index/back.svg" alt="arrow-left"></img></a>',
+        nextArrow: '<a class="arrows next"><img src="assets/img/index/next.svg" alt="arrow-right"></img></a>',
+    });
+}
+
+/* harmony default export */ var slider_catalog = (initSliderCatalog);
 // CONCATENATED MODULE: ./src/scripts/index.js
+
 
 
 
 window.onload = function() {
     slider_main();
     basket_special_slider();
+    slider_catalog();
     $(document).on('click', '.btn-ingredients', function () {
         $('.slick-track').css('transform', 'none');
         $('.slick-list').css('transform', 'none');
